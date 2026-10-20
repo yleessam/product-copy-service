@@ -20,7 +20,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 테스트 실행
-        run: pytest -q              # TODO: 테스트를 실행하는 명령 (5단계에서 커버리지 기준 옵션을 덧붙인다)
+        run: pytest -q --cov=app --cov-fail-under=85             # TODO: 테스트를 실행하는 명령 (5단계에서 커버리지 기준 옵션을 덧붙인다)
 
   build:
     needs: test               # TODO: 어느 job이 성공해야 빌드하나?
