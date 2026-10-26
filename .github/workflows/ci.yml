@@ -1,6 +1,6 @@
 # CI/CD 전체 파이프라인 (정답) — 7단계에서 ci.yml을 이 형태로 확장한다
 # 필요한 Secrets: AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY / ECR_REGISTRY / EC2_HOST / EC2_SSH_KEY
-name: CI
+name: CI+CD
 
 on:
   push:
